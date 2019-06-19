@@ -1,0 +1,18 @@
+<%- include("partials/header"); -%>
+<h1>Compose</h1>
+
+
+<!-- ejs docs 참조: https://ejs.co/#docs -->
+
+<form class="" action="/" method="post">
+    <div class="form-group">
+        <label>Title</label>
+        <input type="text" class="form-control" name="postTitle" rows="1" placeholder="What's the title?" required>
+        <br>
+        <label>Post</label>
+        <textarea class="form-control" rows="5" name="postBody" placeholder="What's new?" required></textarea>
+    </div>
+    <button class="btn btn-primary" type="submit">publish</button>
+</form>
+
+<%- include("partials/footer"); -%>
